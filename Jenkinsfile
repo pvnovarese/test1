@@ -59,7 +59,7 @@ pipeline {
             export ANCHORECTL_URL="http://api:8228/"
             export ANCHORECTL_USERNAME="admin"
             export ANCHORECTL_PASSWORD="foobar"
-            /root/.local/bin/anchorectl -vv image add --wait --no-auto-subscribe busybox:latest
+            ${HOME}/.local/bin/anchorectl -vv image add --no-auto-subscribe busybox:latest
             """
         //
         // if you want continuous re-evaluation in the background, you can turn it on with these:

@@ -59,7 +59,7 @@ pipeline {
             ANCHORECTL_URL="http://api:8228/"
             ANCHORECTL_USERNAME="admin"
             ANCHORECTL_PASSWORD="foobar"
-            /var/jenkins_home/.local/bin/anchorectl -vv image add --wait --no-auto-subscribe busybox:latest
+            /root/.local/bin/anchorectl -vv image add --wait --no-auto-subscribe busybox:latest
             """
         //
         // if you want continuous re-evaluation in the background, you can turn it on with these:

@@ -56,9 +56,9 @@ pipeline {
         //   # and then do this:
         //
           sh """
-            ANCHORECTL_URL="http://api:8228/"
-            ANCHORECTL_USERNAME="admin"
-            ANCHORECTL_PASSWORD="foobar"
+            export ANCHORECTL_URL="http://api:8228/"
+            export ANCHORECTL_USERNAME="admin"
+            export ANCHORECTL_PASSWORD="foobar"
             /root/.local/bin/anchorectl -vv image add --wait --no-auto-subscribe busybox:latest
             """
         //

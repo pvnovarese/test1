@@ -70,4 +70,5 @@ pipeline {
         //
       } // end steps
     } // end stage "analyze image 1 with anchore plugin"     
-    
+  } // end stages
+} // end pipeline 
